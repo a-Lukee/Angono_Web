@@ -10,4 +10,42 @@ body{
 	background-repeat: no-repeat;
 	font-family: sans-serif;
 	background-attachment: fixed;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+	background: linear-gradient(to bottom, #87CEEB, #1E90FF);
+}
+
+.box{
+	width: 1450px;
+	height: 700px;
+	background: black;
+	overflow: hidden;
+	border-radius: 10px;
+	box-shadow: 5px 20px 50px #000;
+	padding: 0%;
+	display: grid;
+ 	grid-template-columns: 2fr 1fr; /* Two equal-width columns */
+  	gap: 0.1px; /* Gap between columns */
+
+}
+
+.halfL{
+	flex: 1;
+  	height: 100%;
+	background-color: rgba(0, 0, 0);
+}
+
+.halfR{
+	flex: 1;
+  	height: 100%;
+	background-color: rgba(255, 255, 255);
+}
+
+.halfR h1{
+	text-align: center;
+  	padding: 20px 0;
+  	border-bottom: 1px solid silver;
 }
