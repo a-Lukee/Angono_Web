@@ -5,69 +5,62 @@
 }
 
 body {
-    background-size: cover;
-	background-position: absolute;
-	background-repeat: no-repeat;
-	font-family: sans-serif;
-	background-attachment: fixed;
-	display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-	background: linear-gradient(to bottom, #87CEEB, #1E90FF);
+	height: 100%;
+	font-family: Poppins-Regular, sans-serif;
+}
+
+.limiter {
+	width: 100%;
+ 	margin: 0 auto;
+}
+
+.container {
+	width: 100%;  
+  	min-height: 100vh;
+  	display: flex;
+  	flex-wrap: wrap;
+  	justify-content: center;
+  	align-items: center;
+  	padding: 15px;
+  	background-repeat: no-repeat;
+  	background-position: center;
+  	background-size: cover;
+  	position: relative;
+  	z-index: 1; 
+}
+
+.container::before {
+	content: "";
+  	display: block;
+  	position: absolute;
+  	z-index: -1;
+  	width: 100%;
+  	height: 100%;
+  	top: 0;
+  	left: 0;
+  	background-color: rgba(255,255,255,0.4);
 }
 
 .box {
-	width: 1200px;
-	height: 700px;
-	background: black;
-	overflow: hidden;
-	border-radius: 10px;
-	box-shadow: 5px 20px 50px #000;
-	padding: 0%;
-	display: grid;
- 	grid-template-columns: 2.2fr 1fr; /* width columns */
-  	gap: 0.1px; /* Gap */
-
+	height: 670px;
+	width: 400px;
+  	border-radius: 14px;
+  	overflow: hidden;
+  	padding: 55px 55px 37px 55px;
+  	background: #9152f8;
+  	background: -webkit-linear-gradient(top, #7579ff, #b224ef);
+  	background: -o-linear-gradient(top, #7579ff, #b224ef);
+  	background: -moz-linear-gradient(top, #7579ff, #b224ef);
+  	background: linear-gradient(top, #7579ff, #b224ef);
+	box-shadow: 5px 5px 90px #000;
 }
 
-.halfL {
-	flex: 1;
-  	height: 100%;
-	background-color: rgba(0, 0, 0);
+.box h1 {
+	font-family: sans-serif;
+  	font-size: 30px;
+  	color: #fff;
+  	line-height: 1.2;
+  	text-align: center;
+  	text-transform: uppercase;
+  	display: block;
 }
-
-.halfR {
-	
-  	height: 100%;
-	background-color: rgba(255, 255, 255);
-}
-
-.halfR h1 {
-	text-align: center;
-  	padding: 20px 0;
-  	border-bottom: 1px solid silver;
-}
-
-.halfR input{
-	width: 60%;
-	padding: 0 5px;
-	height: 40px;
-	font-size: 16px;
-	border: 1px solid silver;
-	background: none;
-	outline: none;
-	justify-content: center;
-	align-items: center;
-}
-
-.halfR label{
-	top: 50%;
-	left: 5px;
-	color: #adadad;
-	transform: translateY(-50%);
-	font-size: 16px;
-	pointer-events: none;
-}
-  
