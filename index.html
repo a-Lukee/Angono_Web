@@ -7,9 +7,32 @@
     </head>
     <body>
         <div class="limiter">
-            <div class="container" style="background-image: url('Images/log.png');">
+            <div class="container" style="background-image: url('FrontEnd/Images/log.png');">
                 <div class="box">
                     <h1>Login</h1>
+                    <div class="input1">
+                        <input name="username" type="text" placeholder="Username">
+                    </div>
+                    <div class="input2">
+                        <input name="password" type="text" placeholder="Password">
+                    </div>
+                    <div class="checkbox">
+                        <input class="input3check" type="checkbox" name="remember-me">
+						<label>Remember me (not yet working)</label>
+                    </div>
+                    <div class="logreg">
+                        <div class="c1">
+                            <button type="submit">Login</button>
+                        </div>
+                        <div class="c2">
+                            <button type="button" onclick="openReg()">Register</button>
+                            <script>
+                                function openReg() {
+                                    window.location.href = "register.html";
+                                }
+                            </script>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
