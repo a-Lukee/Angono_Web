@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="FrontEnd/STYLE/register.css">
     </head>
     <body>
+        <script src="/Scripts/register.js"></script>
         <div class="limiter">
             <div class="container" style="background-image: url('FrontEnd/Images/reg.png');">
                 <div class="box">
@@ -12,22 +13,18 @@
                     <div class="column">
                         <div class="clm">
                             <form onsubmit="return checkForm();" id="myForm">
-                                <label for="Fname">First Name</label>
-                                <input type="text" name="Fname" placeholder="Enter your First Name">
-                                <label for="Mname">Middle Name</label>
-                                <input type="text" name="Mname" placeholder="Enter your Middle Name">
-                                <label for="Lname">Last Name</label>
-                                <input type="text" name="Lname" placeholder="Enter your Last Name">
+                                <label for="Fname">Your Name</label>
+                                <input type="text" name="Fname" placeholder="SURNAME, Given, Initials">
+                                <label for="user">Username</label>
+                                <input type="text" name="user" placeholder="Enter your Username">
                                 <label for="email">Email</label>
                                 <input type="text" name="email" placeholder="Enter your @email">
                                 <label for="cemail">Confirm Email</label>
                                 <input type="text" name="cemail" placeholder="Confirm @email">
-                                <label for="user">Username</label>
-                                <input type="text" name="user" placeholder="Enter your Username">
                                 <label for="pass">Password</label>
-                                <input type="text" name="pass" placeholder="Must be 4 characters long">
+                                <input type="password" name="pass" placeholder="Must be 4 characters long">
                                 <label for="cpass">Confirm Password</label>
-                                <input type="text" name="cpass" placeholder="Confirm Password">
+                                <input type="password" name="cpass" placeholder="Confirm Password">
                             </form>
                         </div>
                         <div class="clm">
@@ -35,42 +32,28 @@
                                 <label for="occup">Occupation</label>
                                 <input type="text" name="occup" placeholder="Enter your Occupation">
                                 <label for="address">Address</label>
-                                <textarea name="address" placeholder="Enter your Address" class="address-input"></textarea>
-                                <!--
+                                <textarea name="address" placeholder="#, Street, Postal Code, City" class="address-input"></textarea>
+                                <label for="day">Birth Date</label>
+                                <input type="date" name="day" id="day" placeholder="mm/dd/yyyy" oninput="updateBirthdayText(this.value)" class="date">
                                 <div class="gnd">
-                                    <label for="javascript">Gender</label>
+                                    <label for="gender">Gender</label>
                                     <br>
                                     <br>
                                     <input type="radio" name="gender"> Male
                                     <input type="radio" name="gender"> Female
+                                    <input type="radio" name="gender"> Prefer not to say
                                 </div>
-                                -->
-                                <label for="day">Birth Date</label>
-                                <input type="date" name="day" id="day" placeholder="mm/dd/yyyy" oninput="updateBirthdayText(this.value)" class="date">
-                                <button type="submit">Register!</button>
+                                <br>
+                                <br>
+                                <div class="bc">
+                                    <button type="submit" class="check">Check Avail</button>
+                                    <button type="submit" class="regis">Register!</button>
+                                </div>
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <script>
-            function checkForm() {
-                var email = document.getElementById("email").value;
-                var confirmEmail = document.getElementById("confirmEmail").value;
-                var password = document.getElementById("password").value;
-                var confirmPassword = document.getElementById("confirmPassword").value;
-                var errorMessage = document.getElementById("errorMessage");
-                var form = document.getElementById("myForm");
-
-                if (email !== confirmEmail || password !== confirmPassword || !email || !confirmEmail || !password || !confirmPassword) {
-                    errorMessage.style.display = "block";
-                    return false;
-                } else {
-                    errorMessage.style.display = "none";
-                    return true;
-                }
-            }
-        </script>
     </body>
 </html>
