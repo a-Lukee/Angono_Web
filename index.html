@@ -1,36 +1,24 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Login</title>
-		<meta charset="utf-8">
-        <link rel="stylesheet" href="FrontEnd/STYLE/login.css">
-    </head>
-    <body>
-        <div class="limiter">
-            <div class="container" style="background-image: url('FrontEnd/Images/log.png');">
-                <div class="box">
-                    <h1>Login</h1>
-                    <div class="input1">
-                        <input name="username" type="text" placeholder="Username">
-                    </div>
-                    <div class="input2">
-                        <input name="password" type="text" placeholder="Password">
-                    </div>
-                    <div class="checkbox">
-                        <input class="input3check" type="checkbox" name="remember-me">
-						<label>Remember me (not yet working)</label>
-                    </div>
-                    <div class="logreg">
-                        <div class="c1">
-                            <button type="submit">Login</button>
-                        </div>
-                        <div class="c2">
-                            <button type="button" onclick="openReg()">Register</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="FrontEnd/STYLE/index.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-menu">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Online Form</a></li>
+            <li><a href="#">Event</a></li>
+            <li><a href="#">Feedback</a></li>
+        </ul>
+        <div class="auth-buttons">
+            <a href="#" class="register-button">Register</a>
+            <a href="#" class="login-button">Login</a>
         </div>
-        <script src="Scripts/login.js"></script>
-    </body>
+    </nav>
+    <div class="content" style="background-image: url('FrontEnd/Images/home.png');">
+
+    </div>
+</body>
 </html>
