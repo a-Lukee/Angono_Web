@@ -7,5 +7,7 @@ Dm me to collab (Damasco AL) [FB]
 
 |---------------|----------|----------|
 
-Language Used: ---------------
+Language Used: PHP | HTML | CSS | JavaScript
+
+DBMS Database - MySQL (agonoDB)
 
