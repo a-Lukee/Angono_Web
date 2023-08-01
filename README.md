@@ -3,9 +3,7 @@
 
 Get started now! git -commit -u
 
-Dm me to collab (Damasco AL) [FB]
-
-|---------------|----------|----------|
+-----------------------------------
 
 Language Used: PHP | HTML | CSS | JavaScript
 
