@@ -11,3 +11,5 @@ Language Used: PHP | HTML | CSS | JavaScript
 
 DBMS Database - MySQL (agonoDB)
 
+> How to Download?
+> Code -> Download ZIP file
