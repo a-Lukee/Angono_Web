@@ -4,6 +4,10 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Lexend Deca', sans-serif;
+	  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .navbar {
@@ -93,8 +97,8 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-}
 
+}
 
 .content::before {
     content: "";
@@ -106,4 +110,126 @@ body {
     top: 0;
     left: 0;
     background-color: rgba(255, 255, 255, 0.6);
+}
+
+/* Added */
+div.a {
+  text-indent: 50px;
+}
+div.b {
+  border: 1px solid black;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+  background-color: lightblue;
+}
+.center {
+  text-align: center;
+  border: 3px solid green;
+}
+
+div.c {
+  text-align: justify;
+  text-justify: inter-word;
+}
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #333;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Optional: Add some responsive styles for smaller screens */
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
 }
