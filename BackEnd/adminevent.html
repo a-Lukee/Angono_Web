@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin</title>
+    <link rel="stylesheet" type="text/css" href="FrontEnd/STYLE/admin.css">
+</head>
+<body>
+    <script src="Scripts/index.js"></script>
+    <nav class="navbar">
+        <ul class="nav-menu">
+            <li><a href="index.html">VIEW</a></li>
+            <li><a href="adminhome.html">Home</a></li>
+            <li><a href="adminevent.html" class="active">Event</a></li>
+        </ul>
+        <div class="auth-buttons">
+            <a href="#" class="register-button" onclick="openReg()">Register</a>
+            <a href="#" class="login-button" onclick="openLog()">Login</a>
+        </div>
+    </nav>
+
+    <div class="content" style="background-image: url('FrontEnd/Images/home.png');">
+        <div class="center">
+            <h1 style="font-size: 3vw;">EVENTS:</h1>
+
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="FrontEnd/Images/form.png">
+                        <img src="FrontEnd/Images/form.png" alt="event" width="600" height="400">
+                    </a>
+                    <div class="desc">August Event</div>
+                </div>
+            </div>
+
+            <form action="addevent.php" method="post" enctype="multipart/form-data">
+                <label for="event_name">Event Name:</label>
+                <input type="text" name="event_name" required>
+
+                <label for="event_description">Event Description:</label>
+                <textarea name="event_description" required></textarea>
+
+                <label for="imageUpload">Select an image to upload:</label>
+                <input type="file" id="imageUpload" name="imageUpload" accept="image/*" required>
+
+                <button type="submit">Add Event</button>
+            </form>
+
+        </div>
+    </div>
+
+</body>
+</html>

@@ -14,3 +14,7 @@ function checkForm() {
         return true;
     }
 }
+
+function redirectToAdminLogin() {
+    window.location.href = "adminlogin.html";
+}
